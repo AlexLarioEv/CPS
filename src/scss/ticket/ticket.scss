@@ -1,0 +1,15 @@
+.ticket{
+
+    &--first{
+
+        @media (min-width: $screen-md){
+            border-radius: 6px 6px 0 0;
+        }
+    }
+
+    &--last{
+        @media (min-width: $screen-md){
+            border-radius: 0 0 6px 6px;
+        }
+    }
+}

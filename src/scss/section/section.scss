@@ -1,0 +1,78 @@
+.section{
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: $screen-md) {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    &__read-more {
+        font-family: $font-family--Medium;
+        margin: 16px 0 16px 20px;
+        position: relative;
+        padding-left: 24px;
+        font-size: $font-size;
+        line-height: $line-height;
+        background-color: $color-main;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 6px;
+            left: 0;
+            background: url("../img/arow.png") no-repeat;
+            width: 10px;
+            height: 12px;
+            transition-duration: 1s;
+            transition-property: transform;
+            transition-timing-function: ease;
+
+            @media (min-width: $screen-xl) {
+                transition-duration: 500ms;
+            }
+
+        }
+
+        @media (min-width: $screen-md) {
+            margin-left: 5px;
+        }
+        
+        @media (min-width: $screen-xl) {
+            transition-duration: 500ms;
+        }
+
+        &--activ::before{
+            content: "";
+            transform: rotate(180deg);
+        }
+    }
+
+    &__img-box{
+
+        @media (min-width: $screen-md) {
+            align-self: center;
+            width: 360px;
+            height: 208px;
+            padding: 0;
+            margin-right: 15px;    
+        }
+
+        @media (min-width: $screen-xl) {
+            width: 530px;
+            height: 307px;
+        }
+    }
+    &__image {
+        box-sizing: content-box;
+        width: 100%;
+        
+        @media (min-width: $screen-md) {
+            height: auto;
+            border-radius: 5px;
+        }
+        @media (min-width: $screen-xl) {
+            border-radius: 10px;
+        }
+    }
+}

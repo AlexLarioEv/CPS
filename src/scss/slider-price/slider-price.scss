@@ -1,0 +1,129 @@
+.slider-price{
+    height: 240px;
+
+    @media (min-width: $screen-md) {
+        height: auto;
+    }
+    
+    &__list{
+
+        @media (min-width: $screen-md) and (max-width: $screen-xl) {
+            margin-bottom: 24px;
+        }
+        @media (min-width: $screen-xl){
+            margin-bottom: 32px;
+        }
+    }
+
+    &__ticket{
+        width: 260px;
+        height: 200px;
+        background: $color-secondary;
+        border: 1px solid $color-separator;
+        border-radius: 6px;
+ 
+        @media (min-width: $screen-md) and (max-width: $screen-xl) {
+            width: 730px;
+            height: auto;
+            border: none;
+        }
+        @media (min-width: $screen-xl){
+            width: 1065px;
+            height: auto;
+            border: none
+        }
+
+    }
+
+    &__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 168px;
+    margin: 16px;
+    font-family: $font-family--Regular;
+    color: $text-color;
+    background: $color-secondary;
+    font-family: $font-family--Regular;
+    color: $text-color;
+    
+        @media (min-width: $screen-md) and (max-width: $screen-xl) {
+            flex-direction: row;
+            align-items: center;
+            height: auto;
+            margin: 0 16px;
+            padding: 23px 0;
+            border-bottom: 1px solid $color-separator;
+        }
+
+        @media (min-width: $screen-xl){
+            flex-direction: row;
+            align-items: center;
+            height: auto;
+            margin: 0 16px;
+            padding: 23px 0;
+            border-bottom: 1px solid $color-separator;
+        }
+    }    
+    
+    &__elements{
+        flex-grow: 0.5;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        @media (min-width: $screen-md) and (max-width: $screen-xl) {
+            flex-grow: 0;
+            flex-direction: row;
+            width:  320px;
+            align-items: center;
+        }
+
+        @media (min-width: $screen-xl){
+            flex-grow: 0;
+            flex-direction: row;
+            width:  530px;
+            align-items: center;
+        }
+
+    }
+
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+
+        @media (min-width: $screen-md) and (max-width: $screen-xl) {
+            align-items: center;
+            width: 220px;
+        }
+        @media (min-width: $screen-xl){
+            align-items: center;
+            width: 310px;
+        }
+    }
+
+    &__title{
+        color: $text-color--muted;
+        margin-bottom: 4px;
+
+        
+        @media (min-width: $screen-md){
+            display: none;
+        }
+    }
+    
+
+    &__button{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 120px;
+        height: 32px;
+        border-radius: 16px;
+        background: $color-button;
+        font-family: $font-family--Bold;
+        color: $color-secondary;
+        font-size: 12px;
+        line-height: $line-height;
+    }
+}

@@ -1,0 +1,15 @@
+.body {
+  background-color:  $color-main;
+  position: relative;
+  display: flex;
+
+  @media (min-width: $screen-md) and (max-width: $screen-xl){
+    width: 768px;
+  }
+  
+  @media (min-width: $screen-xl) {
+    width: $main-window;
+    margin: 0 auto 0 320px;
+
+  }
+}
