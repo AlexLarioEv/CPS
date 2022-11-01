@@ -1,0 +1,47 @@
+.title {
+    font-family: $font-family--Bold;
+    font-size: $font-size--h1;
+    color: $text-color;
+    line-height: $line-height--h1;
+    margin: 24px 0 24px 16px;
+    
+    @media (min-width: $screen-md) {
+        margin: 24px 0 32px 0px;
+        position: relative;
+    }
+
+    @media (min-width: $screen-xl) {
+        margin: 42px 0 8px 0px;
+        position: relative;
+    }
+
+    &::before{
+        content: "";
+        background: $color-activ;
+        position: absolute;
+        left: 0px;
+        border-radius: 0 4px 4px 0;
+        height: 40px;
+        width: 4px;
+
+        @media (min-width: $screen-md) {
+            content: "";
+            background: $color-activ;
+            position: absolute;
+            left: -24px;
+            border-radius: 0 4px 4px 0;
+            height: 40px;
+            width: 4px;
+        }
+        
+        @media (min-width: $screen-xl) {
+            content: "";
+            background: $color-activ;
+            position: absolute;
+            left: -32px;
+            border-radius: 4px 4px 4px 4px;
+            height: 40px;
+            width: 4px;
+        }
+    }
+}

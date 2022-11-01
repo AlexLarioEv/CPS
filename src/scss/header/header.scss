@@ -1,0 +1,11 @@
+.header {
+    padding: 18.6px 16px;
+    background-color: $color-secondary;
+    position: relative;
+    @media (min-width: $screen-md) and (max-width: $screen-xl){
+      width: $screen-md;
+  }
+    @media (min-width:$screen-xl) {
+      padding: 0px;
+    }
+  }

@@ -1,0 +1,8 @@
+.text {
+    color: #1b1c21;
+    transition: color 250ms;
+
+    &:hover {
+        color: #7e7e82;
+    }
+}
