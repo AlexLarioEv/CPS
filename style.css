@@ -1100,21 +1100,19 @@ h6 {
   background-color: #f8f8f8;
   position: relative;
   display: flex; }
+  .body--hidden {
+    overflow: hidden; }
+  .body__container {
+    margin: 0 auto; }
+
+.main {
+  position: relative; }
   @media (min-width: 768px) and (max-width: 1440px) {
-    .body {
-      width: 768px; } }
+    .main {
+      margin-left: 24px; } }
   @media (min-width: 1440px) {
-    .body {
-      width: 1120px;
-      margin: 0 auto 0 320px; } }
-
-@media (min-width: 768px) and (max-width: 1440px) {
-  .main {
-    margin-left: 24px; } }
-
-@media (min-width: 1440px) {
-  .main {
-    margin-left: 34px; } }
+    .main {
+      margin-left: 34px; } }
 
 .container {
   width: 320px;
@@ -1124,25 +1122,38 @@ h6 {
   display: flex;
   flex-direction: column;
   justify-content: space-between; }
-  .container--opacity {
-    opacity: 0; }
   @media (min-width: 768px) and (max-width: 1440px) {
     .container {
       width: 768px; } }
   @media (min-width: 1440px) {
     .container {
       width: 1120px;
-      margin: 0 auto; } }
+      margin: 0 0 0 320px; } }
+  .container--opacity {
+    opacity: 0; }
 
 .header {
   padding: 18.6px 16px;
-  background-color: #ffffff; }
+  background-color: #ffffff;
+  position: relative; }
   @media (min-width: 768px) and (max-width: 1440px) {
     .header {
       width: 768px; } }
   @media (min-width: 1440px) {
     .header {
       padding: 0px; } }
+
+.button {
+  display: flex;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: #ff3e79;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 250ms; }
+  .button:hover {
+    opacity: 0.8; }
 
 .menu {
   display: flex;
@@ -1249,19 +1260,9 @@ h6 {
     display: none; }
     @media (min-width: 1440px) {
       .menu__text {
-        display: block; } }
-
-.button {
-  display: flex;
-  height: 40px;
-  width: 40px;
-  border-radius: 50%;
-  background-color: #ff3e79;
-  justify-content: center;
-  align-items: center;
-  transition: opacity 250ms; }
-  .button:hover {
-    opacity: 0.8; }
+        display: block; }
+        .menu__text:hover + .button {
+          opacity: 0.8; } }
 
 .logo {
   width: 96.55px;
@@ -1356,7 +1357,8 @@ h6 {
   @media (min-width: 768px) {
     .section {
       flex-direction: row;
-      justify-content: space-between; } }
+      justify-content: space-between;
+      align-items: flex-start; } }
   .section__read-more {
     font-family: TT Lakes Medium;
     margin: 16px 0 16px 20px;
@@ -1390,7 +1392,6 @@ h6 {
       transform: rotate(180deg); }
   @media (min-width: 768px) {
     .section__img-box {
-      align-self: center;
       width: 360px;
       height: 208px;
       padding: 0;
@@ -1556,7 +1557,6 @@ h6 {
 
 .section-slide {
   overflow: hidden;
-  width: 304px;
   margin-left: 16px; }
   @media (min-width: 768px) and (max-width: 1440px) {
     .section-slide {
@@ -1915,6 +1915,9 @@ h6 {
     color: #ffffff;
     font-size: 12px;
     line-height: 24px; }
+    .slider-price__button:hover {
+      opacity: 0.8;
+      transition: opacity 250ms; }
 
 @media (min-width: 768px) {
   .ticket--first {
@@ -2018,7 +2021,6 @@ h6 {
     flex-direction: column;
     flex-grow: 1; }
   .aside-connection__text {
-    width: 290px;
     height: 50px;
     border: 1px solid #eaeaea;
     border-radius: 8px;
@@ -2034,7 +2036,8 @@ h6 {
       .aside-connection__text {
         width: 376px; } }
     .aside-connection__text--last {
-      height: 120px; }
+      height: 120px;
+      resize: none; }
   .aside-connection__info {
     font-family: TT Lakes Regular;
     font-size: 14px;
@@ -2048,10 +2051,10 @@ h6 {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    width: 120px;
+    width: 130px;
     height: 32px;
     border-radius: 16px;
-    background: #ff3e79;
+    background: url(./static/submit.svg);
     font-family: TT Lakes Bold;
     color: #ffffff;
     font-size: 12px;
@@ -2115,7 +2118,6 @@ h6 {
     flex-direction: column;
     flex-grow: 1; }
   .aside-tel__text {
-    width: 290px;
     height: 50px;
     border: 1px solid #eaeaea;
     border-radius: 8px;
@@ -2143,10 +2145,10 @@ h6 {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    width: 120px;
+    width: 130px;
     height: 32px;
     border-radius: 16px;
-    background: #ff3e79;
+    background: url(./static/submit.svg);
     font-family: TT Lakes Bold;
     color: #ffffff;
     font-size: 12px;

@@ -7,135 +7,134 @@
     <title>CPS</title>
   <link href="style.css" rel="stylesheet"></head>
   <body class="body">
-      <aside class="aside">
-        <nav class="aside__nav-top">
-        <ul class="aside__items-top">
-          <li class="aside__item-top--hidden">
-            <button href="#" class="button button__close">
-              <img src="img/close.svg" alt="close">
-            </button>
-          </li>
-          <li class="aside__logo">
-            <a class="logo--visible" href="#">
-              <img src="img/logo.png" alt="logo">
+    <div class="body__container">
+        <aside class="aside">
+          <nav class="aside__nav-top">
+          <ul class="aside__items-top">
+            <li class="aside__item-top--hidden">
+              <button class="button button__close">
+                <img src="img/close.svg" alt="close">
+              </button>
+            </li>
+            <li class="aside__logo">
+              <a class="logo--visible" href="#">
+                <img src="img/logo.png" alt="logo">
+              </a>
+            </li>
+            <li>
+              <button class="button">
+                <img src="img/find.svg" alt="find">
+              </button>
+            </li>
+          </ul>
+        </nav>
+        <nav class="aside__nav">
+          <ul class="aside__items">
+            <li>
+              <a class="aside__item aside__item--active--grey" href="#">
+                Ремонт техники
+              </a>
+            </li>
+            <li>
+              <a class="aside__item" href="#"> Услуги и сервисы </a>
+            </li>
+            <li>
+              <a class="aside__item" href="#"> Корпоративным клиентам </a>
+            </li>
+            <li>
+              <a class="aside__item" href="#"> Продавцам техники </a>
+            </li>
+            <li>
+              <a class="aside__item" href="#"> Партнерам </a>
+            </li>
+            <li>
+              <a class="aside__item" href="#"> Производителям </a>
+            </li>
+            <li>
+              <a class="aside__item" href="#"> Наши сервисные центры </a>
+            </li>
+            <li>
+              <a class="aside__item" href="#"> Контакты </a>
+            </li>
+          </ul>
+        </nav>
+        <nav class="aside__nav-bottom">
+          <ul class="aside__items-bottom">
+            <li class="aside__item-bottom">
+              <button class="button button__tel">
+                <img src="img/tel.svg" alt="tel">
+              </button>
+            </li>
+            <li class="aside__item-bottom">
+              <button class="button button__message">
+                <img src="img/message.svg" alt="message">
+              </button>
+            </li>
+            <li class="aside__item-bottom">
+              <button class="button">
+                <img src="img/social.svg" alt="social">
+              </button>
+            </li>
+          </ul>
+        </nav>
+        <ul class="info">
+          <li class="info__mail">
+            <a href="#">
+              <span class="text"> mail@cps.com </span>
             </a>
           </li>
-          <li>
-            <button href="#" class="button">
-              <img src="img/find.svg" alt="find">
-            </button>
+          <li class="info__tel">
+            <a href="#"> <span class="text"> 8 800 890 8900 </span> </a>
           </li>
         </ul>
-      </nav>
-      <nav class="aside__nav">
-        <ul class="aside__items">
-          <li>
-            <a class="aside__item aside__item--active--grey" href="#">
-              Ремонт техники
-            </a>
-          </li>
-          <li>
-            <a class="aside__item" href="#"> Услуги и сервисы </a>
-          </li>
-          <li>
-            <a class="aside__item" href="#"> Корпоративным клиентам </a>
-          </li>
-          <li>
-            <a class="aside__item" href="#"> Продавцам техники </a>
-          </li>
-          <li>
-            <a class="aside__item" href="#"> Партнерам </a>
-          </li>
-          <li>
-            <a class="aside__item" href="#"> Производителям </a>
-          </li>
-          <li>
-            <a class="aside__item" href="#"> Наши сервисные центры </a>
-          </li>
-          <li>
-            <a class="aside__item" href="#"> Контакты </a>
-          </li>
-        </ul>
-      </nav>
-      <nav class="aside__nav-bottom">
-        <ul class="aside__items-bottom">
-          <li class="aside__item-bottom">
-            <button href="#" class="button button__tel">
-              <img src="img/tel.svg" alt="tel">
-            </button>
-          </li>
-          <li class="aside__item-bottom">
-            <button href="#" class="button button__message">
-              <img src="img/message.svg" alt="message">
-            </button>
-          </li>
-          <li class="aside__item-bottom">
-            <button href="#" class="button">
-              <img src="img/social.svg" alt="social">
-            </button>
-          </li>
-        </ul>
-      </nav>
-      <ul class="info">
-        <li class="info__mail">
-          <a href="#">
-            <span class="text"> mail@cps.com </span>
-          </a>
-        </li>
-        <li class="info__tel">
-          <a href="#"> <span class="text"> 8 800 890 8900 </span> </a>
-        </li>
-      </ul>
-      <form class="lang">
-        <input class="lang__radio" type="radio" id="lang-RU" name="radio" checked="checked">
-          <label class="lang__label" for="lang-RU">RU</label>
-          <input class="lang__radio" type="radio" id="lang-EN" name="radio">
-          <label class="lang__label" for="lang-EN">EN</label>
-        <input class="lang__radio" type="radio" id="lang-CH" name="radio">
-        <label class="lang__label" for="lang-CH">CH</label>
-      </form>
-    </aside>
-    <aside class="aside-connection">
-      <button href="#" class="button aside-connection__button-clouse">
-        <img src="img/close.svg" alt="close">
-      </button>
-      <h2 class="aside-connection__title">
-        Обратная связь
-      </h2>
-      <form class="aside-connection__input" name="test">
-        <input class="aside-connection__text" type="text" placeholder="Имя">
-        <input class="aside-connection__text" type="tel" placeholder="Телефон">
-        <input class="aside-connection__text" type="email" placeholder="Электронная почта">
-        <textarea class="aside-connection__text aside-connection__text--last" placeholder="Сообщение"></textarea>
-        <p class="aside-connection__info">Нажимая “отправить”, вы даете согласие на <span class="aside-connection__info--activ">обработку персональных данных</span> 
-            и соглашаетесь с нашей <span class="aside-connection__info--activ">политикой конфиденциальности</span>
-        </p>
-        <button href="#" class="aside-connection__button"><h3>ОТПРАВИТЬ</h3>
-          <img src="img/arrow-white.svg" alt="arrow"></button>
-      </form>
-    </aside>
-    <aside class="aside-tel">
-      <button href="#" class="button aside-tel__button-clouse">
-        <img src="img/close.svg" alt="close">
-      </button>
-      <h2 class="aside-tel__title">
-        Заказать звонок
-      </h2>
-      <form class="aside-tel__input" name="test">
-        <input class="aside-tel__text" type="tel" placeholder="Телефон">
-        <p class="aside-tel__info">Нажимая “отправить”, вы даете согласие на <span class="aside-connection__info--activ">обработку персональных данных</span> 
-            и соглашаетесь с нашей <span class="aside-tel__info--activ">политикой конфиденциальности</span>
-        </p>
-        <button href="#" class="aside-tel__button"><h3>ОТПРАВИТЬ</h3>
-          <img src="img/arrow-white.svg" alt="arrow"></button>
-      </form>
-    </aside>
-    <div class="container">
+        <form class="lang">
+          <input class="lang__radio" type="radio" id="lang-RU" name="radio" checked="checked">
+            <label class="lang__label" for="lang-RU">RU</label>
+            <input class="lang__radio" type="radio" id="lang-EN" name="radio">
+            <label class="lang__label" for="lang-EN">EN</label>
+          <input class="lang__radio" type="radio" id="lang-CH" name="radio">
+          <label class="lang__label" for="lang-CH">CH</label>
+        </form>
+      </aside>
+      <aside class="aside-connection">
+        <button class="button aside-connection__button-clouse">
+          <img src="img/close.svg" alt="close">
+        </button>
+        <h2 class="aside-connection__title">
+          Обратная связь
+        </h2>
+        <form class="aside-connection__input" name="test">
+          <input class="aside-connection__text" type="text" placeholder="Имя">
+          <input class="aside-connection__text" type="tel" placeholder="Телефон">
+          <input class="aside-connection__text" type="email" placeholder="Электронная почта">
+          <textarea class="aside-connection__text aside-connection__text--last" placeholder="Сообщение"></textarea>
+          <p class="aside-connection__info">Нажимая “отправить”, вы даете согласие на <span class="aside-connection__info--activ">обработку персональных данных</span> 
+              и соглашаетесь с нашей <span class="aside-connection__info--activ">политикой конфиденциальности</span>
+          </p>
+          <input type="submit" value="" class="aside-connection__button">
+        </form>
+      </aside>
+      <aside class="aside-tel">
+        <button class="button aside-tel__button-clouse">
+          <img src="img/close.svg" alt="close">
+        </button>
+        <h2 class="aside-tel__title">
+          Заказать звонок
+        </h2>
+        <form class="aside-tel__input" name="test">
+          <input class="aside-tel__text" type="tel" placeholder="Телефон">
+          <p class="aside-tel__info">Нажимая “отправить”, вы даете согласие на <span class="aside-connection__info--activ">обработку персональных данных</span> 
+              и соглашаетесь с нашей <span class="aside-tel__info--activ">политикой конфиденциальности</span>
+          </p>
+          <input type="submit" value="" class="aside-tel__button">
+        </form>
+      </aside>
+      <div class="container">
       <header class="header">
         <nav class="menu">
           <ul class="menu__items">
             <li class="menu__burger">
-              <button href="#" class="button button__burger">
+              <button class="button button__burger">
                   <img src="img/burger.svg" alt="burger">
                 </button>
               </li>
@@ -148,24 +147,24 @@
             <div class="menu__container">
               <ul class="menu__items menu__block">
                 <li>
-                  <button href="#" class="button button__tel">
+                  <button class="button button__tel">
                     <img src="img/tel.svg" alt="phone">
                   </button>
                 </li>
                 <li>
-                  <button href="#" class="button button__message">
+                  <button class="button button__message">
                     <img src="img/message.svg" alt="message">
                   </button>
                 </li>
                 <li>
-                  <button href="#" class="button">
+                  <button class="button">
                     <img src="img/social.svg" alt="social">
                   </button>
                 </li>
               </ul>
               <ul class="menu__items menu__block">
                 <li>
-                  <button href="#" class="menu__name" id="tools">
+                  <button class="menu__name" id="tools">
                     <span class="menu__text"> Оставить заявку </span>
                     <span class="button">
                       <img src="img/tools.svg" alt="tools">
@@ -173,7 +172,7 @@
                   </button>
                 </li>
                 <li>
-                  <button href="#" class="menu__name" id="search">
+                  <button class="menu__name" id="search">
                     <span class="menu__text">Статус ремонта</span>
                     <span class="button">
                       <img src="img/search.svg" alt="search">
@@ -234,7 +233,7 @@
             </div>
         </section>
         <section class="section-slide">
-          <h1 class="section-slide__title">Ремонт техники различных брендов</h1>
+          <h2 class="section-slide__title">Ремонт техники различных брендов</h2>
           <div class="slider-brands swiper">
             <ul class="slider-brands__list swiper-wrapper">
               <li class="swiper-slide">
@@ -363,13 +362,13 @@
           <button class="section-slide__read-more">Читать далее</button>
         </section>
         <section class="section-slide">
-          <h1 class="section-slide__title">Ремонт различных видов техники</h1>
+          <h2 class="section-slide__title">Ремонт различных видов техники</h2>
           <div class="slider-tech swiper">
             <ul class="slider-tech__list swiper-wrapper">
               <li class="swiper-slide">
                 <a class="slider-tech__link" href="#">
                   <div class="slider-tech__wrapper">
-                    <h2 class="slider-tech__title">Ремонт ноутбуков</h2>
+                    <span class="slider-tech__title">Ремонт ноутбуков</span>
                   </div>
                   <div class="slider-tech__arrow">
                     <img src="img/arrow.svg" alt="arrow">
@@ -379,7 +378,7 @@
               <li class="swiper-slide">
                 <a class="slider-tech__link" href="#">
                   <div class="slider-tech__wrapper">
-                    <h2 class="slider-tech__title">Ремонт планшетов</h2>
+                    <span class="slider-tech__title">Ремонт планшетов</span>
                   </div>
                   <div class="slider-tech__arrow">
                     <img src="img/arrow.svg" alt="arrow">
@@ -389,7 +388,7 @@
               <li class="swiper-slide">
                 <a class="slider-tech__link" href="#">
                   <div class="slider-tech__wrapper">
-                    <h2 class="slider-tech__title">Ремонт ПК</h2>
+                    <span class="slider-tech__title">Ремонт ПК</span>
                   </div>
                   <div class="slider-tech__arrow">
                     <img src="img/arrow.svg" alt="arrow">
@@ -399,7 +398,7 @@
               <li class="swiper-slide">
                 <a class="slider-tech__link" href="#">
                   <div class="slider-tech__wrapper">
-                    <h2 class="slider-tech__title">Ремонт мониторов</h2>
+                    <span class="slider-tech__title">Ремонт мониторов</span>
                   </div>
                   <div class="slider-tech__arrow">
                     <img src="img/arrow.svg" alt="arrow">
@@ -409,7 +408,7 @@
               <li class="swiper-slide">
                 <a class="slider-tech__link" href="#">
                   <div class="slider-tech__wrapper">
-                    <h2 class="slider-tech__title">Ремонт ноутбуков</h2>
+                    <span class="slider-tech__title">Ремонт ноутбуков</span>
                   </div>
                   <div class="slider-tech__arrow">
                     <img src="img/arrow.svg" alt="arrow">
@@ -419,7 +418,7 @@
               <li class="swiper-slide">
                 <a class="slider-tech__link" href="#">
                   <div class="slider-tech__wrapper">
-                    <h2 class="slider-tech__title">Ремонт планшетов</h2>
+                    <span class="slider-tech__title">Ремонт планшетов</span>
                   </div>
                   <div class="slider-tech__arrow">
                     <img src="img/arrow.svg" alt="arrow">
@@ -429,7 +428,7 @@
               <li class="swiper-slide">
                 <a class="slider-tech__link" href="#">
                   <div class="slider-tech__wrapper">
-                    <h2 class="slider-tech__title">Ремонт ПК</h2>
+                    <span class="slider-tech__title">Ремонт ПК</span>
                   </div>
                   <div class="slider-tech__arrow">
                     <img src="img/arrow.svg" alt="arrow">
@@ -439,7 +438,7 @@
               <li class="swiper-slide">
                 <a class="slider-tech__link" href="#">
                   <div class="slider-tech__wrapper">
-                    <h2 class="slider-tech__title">Ремонт мониторов</h2>
+                    <span class="slider-tech__title">Ремонт мониторов</span>
                   </div>
                   <div class="slider-tech__arrow">
                     <img src="img/arrow.svg" alt="arrow">
@@ -452,7 +451,7 @@
           <button class="section-slide__read-more">Читать далее</button>
         </section>
         <section class="section-slide">
-          <h1 class="section-slide__title">Цены на услуги</h1>
+          <h2 class="section-slide__title">Цены на услуги</h2>
           <div class="section-slide__table-header">
             <div class="section-slide__service">
               <h2>Ремонтные услуги</h2>
@@ -482,8 +481,8 @@
                           <h3>30 мин</h3>
                         </div>
                         <div>
-                          <button href="#" class="slider-price__button"> 
-                            <h3>Заказать</h3>
+                          <button class="slider-price__button"> 
+                            <span>Заказать</span>
                             <img src="img/arrow-white.svg" alt="arrow">
                           </button>
                         </div>
@@ -510,7 +509,7 @@
                           <h3>30-120 мин</h3>
                         </div>
                         <div>
-                          <button href="#" class="slider-price__button"><h3>Заказать</h3>
+                          <button class="slider-price__button"><span>Заказать</span>
                           <img src="img/arrow-white.svg" alt="arrow"></button>
                         </div>
                       </div>
@@ -536,7 +535,7 @@
                           <h3>30-120 мин</h3>
                         </div>
                         <div>
-                          <button href="#" class="slider-price__button"><h3>Заказать</h3>
+                          <button class="slider-price__button"><span>Заказать</span>
                           <img src="img/arrow-white.svg" alt="arrow"></button>
                         </div>
                       </div>
@@ -562,7 +561,7 @@
                             <h3>30-120 мин</h3>
                           </div>
                           <div>
-                            <button href="#" class="slider-price__button"><h3>Заказать</h3>
+                            <button class="slider-price__button"><span>Заказать</span>
                             <img src="img/arrow-white.svg" alt="arrow"></button>
                           </div>
                         </div>
@@ -588,7 +587,7 @@
                             <h3>30-120 мин</h3>
                           </div>
                           <div>
-                            <button href="#" class="slider-price__button"><h3>Заказать</h3>
+                            <button class="slider-price__button"><span>Заказать</span>
                             <img src="img/arrow-white.svg" alt="arrow"></button>
                           </div>
                         </div>
@@ -601,7 +600,7 @@
           </div>
           <p class="section-slide__info">Все цены указаны с учетом НДС. Стоимость ремонта указана на единичную услугу. Для получения коммерческого предложения на постоянное обслуживание, оставьте заявку.</p>
           <a class="section-slide__link" href="#"> 
-            <h2>Получить коммерческое предложение</h2>
+            <span>Получить коммерческое предложение</span>
             <img class="section-slide__arrow" src="./img/arrow.svg" alt="arrow">
           </a>
         </section>
@@ -619,5 +618,6 @@
         </div>
       </footer>
     </div>
+  </div>
 <script type="text/javascript" src="./js/bundle.js"></script></body>
 </html>
